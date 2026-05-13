@@ -465,7 +465,7 @@ footer {{ display: none !important; }}
 # ── Model loader ───────────────────────────────────────────────────────────────
 @st.cache_resource(show_spinner=False)
 def load_model():
-    model_path = r"C:\Users\dell\logistic_regression_model.sav"
+    model_path = "logistic_regression_model.sav"
     if not os.path.exists(model_path):
         return None
     return joblib.load(model_path)
